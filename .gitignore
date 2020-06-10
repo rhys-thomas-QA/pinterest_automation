@@ -81,6 +81,18 @@ target/
 profile_default/
 ipython_config.py
 
+
+node_modules
+certifi
+certifi-2020.4.5.2.dist-info
+chardet
+chardet-3.0.4.dist-info
+idna
+idna-2.9.dist-info
+requests
+requests-2.23.0.dist-info
+urllib3
+urllib3-1.25.9.dist-info
 # pyenv
 .python-version
 
