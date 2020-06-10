@@ -1,12 +1,12 @@
 import tests.add_pins as add_pins
 artist_array_1 = [
-    # "Queen",
-    # "Lynyrd Skynyrd",
-    # "Foo Fighters",
-    # "Dire Straits",
-    # "Red Hot Chilli Peppers",
-    # "Zakk Wylde",
-    # "Slayer",
+    "Queen",
+    "Lynyrd Skynyrd",
+    "Foo Fighters",
+    "Dire Straits",
+    "Red Hot Chilli Peppers",
+    "Zakk Wylde",
+    "Slayer",
     "Taylor Swift"
 ]
 

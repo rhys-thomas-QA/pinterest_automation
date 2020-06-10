@@ -2,12 +2,12 @@ import tests.add_pins as add_pins
 
 artist_array_2 = [
     "The Rolling Stones",
-    # "Creedence Clearwater Revival",
-    # "John Mayer",
-    # "Guns N Roses",
-    # "Metallica",
-    # "Eric Clapton",
-    # "Greenday"
+    "Creedence Clearwater Revival",
+    "John Mayer",
+    "Guns N Roses",
+    "Metallica",
+    "Eric Clapton",
+    "Greenday"
 ]
 
 
