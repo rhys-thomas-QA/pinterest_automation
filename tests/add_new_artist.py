@@ -66,19 +66,7 @@ def search_url(artist):
 def get_search_results(artist):
     search_url(artist)
     headers = {
-        'authority': 'www.pinterest.co.uk',
-        'accept': 'application/json, text/javascript, */*, q=0.01',
-        'x-pinterest-appstate': 'active',
-        'x-app-version': 'fd3c85b',
-        'x-requested-with': 'XMLHttpRequest',
-        'x-pinterest-experimenthash': '34879610e323f52518c71f6af2b94994d1a5ff53db42df4021881df51763093129a043acc2fa9cdc15bccb886e022a7b52145c13f6ca18d95296717a802d2e28',
-        'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36',
-        'sec-fetch-site': 'same-origin',
-        'sec-fetch-mode': 'cors',
-        'sec-fetch-dest': 'empty',
-        'referer': 'https://www.pinterest.co.uk/',
-        'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8',
-        'cookie': 'csrftoken=34d8c022b199d4258a6f48e00a1a9aa3; cm_sub=denied; fba=True; fbm_274266067164=base_domain=.www.pinterest.co.uk; bei=false; logged_out=True; g_state={"i_p":1593165670442,"i_l":4}; _auth=1; _pinterest_sess=TWc9PSZOcHg4SndXZGtnbzV0ZWNFcGhEcW0raEpFR3BFdGlsQ29PYU1OdFZlN29WUDVhZ1I0WFk1anhNS0gyeWlKZWdpeXIzdjd3aDZnc1NReExTZDVCdHNUWjU5SVJ3MkVCYmcwQ0poSFVlNzQwb0pyOGN5cTFwQ1RIcHp5L0czYVlUazBWZ01CWGkxditveGRlL0oxK2cwWVQxZkNwc09KMkpIRjlueFdwTXk2UU1lOGR3eUc0MEdRVFNSZy94bFU3UHhxOGRhQmRkNVZLQzAxZkN3RmtEZ2t0S1U5Vm81Mytzc21QVTlqTGJpSVArZTNSa2tRRlVpNUlQRDJUK0E5Vm9tY20wYU51ek1XdFp0eXRNQkxqRTN3RXFZUFludjVaaDhkZlJCdDYvckNzR1dIZ3drSzBmSUgvb2ZvT1BoTVlGQWpuZnNUVHBpajFkc2RTandqS3lGanNFUEVSakFwdUIzN2Y1SWUyYjJ5TzZTd2dsWlBvS2VkQVlaSUg3T2JWc3o0WUh0NEgzL3hmRlRRb0pQaHllc1ZDUDR3ZUdxaGxFY2lMY0cwdnAzVS9jQ0tacElBVit2MldDNGs1RzNtaGttMnpEK3JNb0xJdVd6R29zdlV3bncxT2hFMnJRZGxGZnhWbjN4dGdwQ3Q1RG5SZUhhUWRMcmkvY3N1d1hZdERuMHYvdDdrbFJYRjIvbVpRdDgxK2lVME8rdmdmS3g4dDhqNUVaWGU5RkdDRk5vZ205Ty9Lb3FGTWlXVm9UYTlBdWFUZHl4RUtZa01FM0NXSkVCSnZQTEVzdlgxcFpzQmxqV2l3TDFENHA3VloxM2I0cld2L3FpL20zbmUxVVZxemkvM1ZZanNkMW1hQW1yMk9xZTVhVjdsZVdyYTVEZ0YyTWRYS09lOU50T2FiV0tNRUFQQVdtWURocXAyanMwQ2NXUjdzMUcvOTI2QmFpREJsMUYrWG9ySzVxell6WXk0bzF1MHJrNnJHalNkb2lxTWFGbnh5bFh0WmtZQlNFbWJRVW1ta2dXdlovZlhmaThjakJmcnhHU25CZGNmUlZGTkFTblhSRTA4bkVldWh1ZFdJeXo3RkZkUW5mV00zZHNyV3Q5VFMraHpGbndvckJtVlh0RW1qTEpMbThVQS9QZmo5eHFRU2tURE5RQjZVejd2QnpBby9DTzI0UjFZdDdUUlo4dVhDd1JRQ3J6OUJQU2lPZ09VcW9ocnB2S0sxV3JlR1FnVDREWHFLdVF5UWRsV3N4RytPZmgwcWg5cFpOUG9pc3FIc0U1VWRlZkI4VWtLdDBlVDYvWThVeGNzd1pJSXRaU1hab2ExaU5QQisyZVh2OHVDVnJRMmNpdkVNZzVBUFAxWVllV0FVamJxdFEvZGVMbHpNbnF5NEptZXNMRXI5MUVkUjZDU3pjSWdJd1VqMHMwbCt3MWNEVjVKcWZyemcwcjJBR2NpQ0JzTk1qSHYzYkhPVmJCVGVaQXpHUFJlQmdYalhCWTJKQWRCVWU5VjVySFowVjhqV2QvWE8vRGN5VSsvWTljejJaK1BUOTNKeGE1SGlGSE9zVGtuU3krZjVrbm45SFgxMnF2MjVkcXVlWGNFK3ppTjJKWTJ5d1Uyb1RzYW16RUZKN0F4NVhDODhPS2pDYTc3czRHRm1aSjhOSEdnRmJrNUdFazJlQnNzanVMVHNyTnFkeXk4ZVZXTDk5RkxFd2F3R3pMN2N2YUFCaUh1enpyWDNNdXc1YjNoYVk4NDRyNkxmeHJxRTNJdEpiR29YSXh5RURLU1hFSmlPS1VPMWpIR2lPMjUxMzVxaUFqRGIyRzdPSEM4VEovenhoQ3BLSkNGcmttSWZ5RmpUUElmRlY1WXU1Y3dRTEJhTlRlZWZRRTk1WFcrUW9wZ2lyVTVMeDUybFUzK2dkK05qQVd1NWdVY253RmtLbjFlUStPUU5rMVB3YW5Wd1ZxZmFTaFVHaUpsTmRHYXdXa1NsZGx1M1VwOEE9PSZEcEoxS1JKd3NKeEtWS25rN1JucG5kdWtDYjQ9; _routing_id="322ee1aa-07c3-458f-bbf5-0d025b6c0ef2"; sessionFunnelEventLogged=1'
+    #removed for security purposes
     }
     payload = {}
     response = requests.request("GET", artistSearchUrl, headers=headers, data=payload)
